@@ -24,7 +24,7 @@ class MaverickMoviesSkill(OVOSCommonPlaybackSkill):
                                                           "soundtrack", " OST", "opening theme"])
 
     def initialize(self):
-        url = "https://www.youtube.com/channel/UCVFYikepF-avelvuIaQ_lHA/videos"
+        url = "https://www.youtube.com/channel/UC2u3R3pjOiPZu4LtTlKkxdw"
         bootstrap = f"https://raw.githubusercontent.com/OpenJarbas/streamindex/main/{self.archive.db.name}.json"
         self.archive.bootstrap_from_url(bootstrap)
         self.archive.monitor(url)
