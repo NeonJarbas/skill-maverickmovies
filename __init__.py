@@ -25,7 +25,7 @@ class MaverickMoviesSkill(OVOSCommonPlaybackSkill):
 
     def initialize(self):
         url = "https://www.youtube.com/channel/UC2u3R3pjOiPZu4LtTlKkxdw"
-        bootstrap = f"https://raw.githubusercontent.com/OpenJarbas/streamindex/main/{self.archive.db.name}.json"
+        bootstrap = "https://github.com/JarbasSkills/skill-maverickmovies/raw/dev/bootstrap.json"
         self.archive.bootstrap_from_url(bootstrap)
         self.archive.monitor(url)
         self.archive.setDaemon(True)
